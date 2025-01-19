@@ -1,0 +1,48 @@
+.input {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 4px 12px;
+  width: 250px;
+  color: #fff;
+  transition: all 250ms ease-in-out;
+
+  &::placeholder {
+    color: #fff;
+  }
+
+  &:is(:hover, :focus) {
+    transform: scale(105%);
+  }
+}
+
+.form {
+  padding: 40px 0;
+  /* border: 1px solid #fff; */
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.btn {
+  display: flex;
+  width: 60px;
+  padding: 2px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 250ms ease-in-out;
+
+  &:is(:hover, :focus) {
+    transform: scale(105%);
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
